@@ -31,7 +31,7 @@ class Dataset:
         ged_tags = []
 
 
-        with open(raw_data_path) as f:
+        with open(raw_data_path, encoding='utf-8') as f:
             for i, line in enumerate(f.readlines()[1:]):
                 line = line.split('\t')
                 if len(line) == 3:

@@ -15,7 +15,7 @@ class ErrorAnalysisExample:
 
 def error_analysis(error_anas, path):
 
-    with open(path, 'w') as f:
+    with open(path, 'w', encoding='utf-8') as f:
         f.write('SRC\tGEN\tGOLD_TAG\tPRED_TAG\tSYS\n')
         for ex in error_anas:
             src_tokens = ex.src_tokens

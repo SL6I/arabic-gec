@@ -200,7 +200,7 @@ def is_model_tag(tag, mode='full'):
     return True
 
 if __name__ == '__main__':
-    data = Dataset(raw_data_path='/scratch/ba63/gec/data/alignment/modeling_areta_tags_improved/qalb14/qalb14_train.areta+.nopnx.txt')
+    data = Dataset(raw_data_path='C:/Users/SL6/Desktop/Try3/arabic-gec/data/areta_tags/w_camelira/mix/mix_train.areta+.nopnx.txt')
     model = CBR_WO_GED.build_model(data, ngrams=2)
     import pdb; pdb.set_trace()
     x = 10  

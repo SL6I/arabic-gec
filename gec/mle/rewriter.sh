@@ -14,7 +14,7 @@
 # train_file=/home/ba63/gec-release/data/ged/areta_tags/qalb14/qalb14_train.areta+.nopnx.txt
 # test_file=/home/ba63/gec-release/data/ged/areta_tags/qalb14/qalb14_dev.areta+.txt
 # ged_model=/scratch/ba63/gec/models/ged++/qalb14/full/wo_camelira/checkpoint-4000
-# output_path=/home/ba63/gec-release/gec/outputs/qalb14/mle/qalb14_dev.preds.txt
+# output_path=/hzaebuc_dev.areta+.txtome/ba63/gec-release/gec/outputs/qalb14/mle/qalb14_dev.preds.txt
 
 # train_file=/home/ba63/gec-release/data/ged/areta_tags/qalb14-15/qalb14-15_train.areta+.nopnx.txt
 # test_file=/home/ba63/gec-release/data/ged/areta_tags/qalb15/qalb15_dev.areta+.txt
@@ -37,17 +37,14 @@
 # ged_model=/scratch/ba63/gec/models/ged++/qalb14-15/full/w_camelira/checkpoint-4500
 # output_path=/home/ba63/gec-release/gec/outputs/qalb15/mle+morph/qalb15_dev.preds.txt
 
-
-train_file=/home/ba63/gec-release/data/ged/areta_tags_camelira/mix/mix_train.areta+.nopnx.txt
-test_file=/home/ba63/gec-release/data/ged/areta_tags_camelira/zaebuc/zaebuc_dev.areta+.txt
-ged_model=/scratch/ba63/gec/models/ged++/mix/full/w_camelira/checkpoint-5500
-output_path=/home/ba63/gec-release/gec/outputs/zaebuc/mle+morph/zaebuc_dev.preds.txt
-
+# data\alignments\modeling_camelira\qalb14\qalb14_dev.nopnx.txt
+train_file=C:/Users/SL6/Desktop/Try3/arabic-gec/data/areta_tags/w_camelira/qalb14/qalb14_train.areta+.nopnx.txt
+test_file=C:/Users/SL6/Desktop/Try3/arabic-gec/data/areta_tags/w_camelira/qalb14/qalb14_dev.areta.nopnx.txt
+# ged_model=C:/Users/SL6/Desktop/Try3/arabic-gec/ged/model.py
+output_path=C:/Users/SL6/Desktop/Try3/arabic-gec/gec/mle/error_identifier
 python rewriter.py \
-        --train_file $train_file \
-        --test_file  $test_file \
-        --ged_model  $ged_model \
-        --mode full \
-        --cbr_ngrams 2 \
-        --output_path $output_path \
-        --do_error_ana
+  --train_file $train_file \
+  --test_file  $test_file \
+  --mode full \
+  --cbr_ngrams 2 \
+  --output_path $output_path

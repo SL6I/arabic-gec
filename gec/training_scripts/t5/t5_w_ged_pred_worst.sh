@@ -1,14 +1,10 @@
 #!/usr/bin/env bash
-#SBATCH -p nvidia
-# use gpus
-#SBATCH --gres=gpu:v100:1
-# memory
-#SBATCH --mem=225GB
-# Walltime format hh:mm:ss
-#SBATCH --time=40:00:00
-# Output and error files
-#SBATCH -o job.%J.out
-#SBATCH -e job.%J.err
+# #SBATCH -p nvidia
+# #SBATCH --gres=gpu:v100:1
+# #SBATCH --mem=225GB
+# #SBATCH --time=40:00:00
+# #SBATCH -o job.%J.out
+# #SBATCH -e job.%J.err
 
 
 MODEL=/scratch/ba63/BERT_models/AraT5-base

@@ -138,7 +138,8 @@ class Rewriter:
 
 
 def write_data(path, data):
-    with open(path, mode='w') as f:
+    with open(f"{path}/output.txt", 'w', encoding='utf-8') as f:
+
         f.write('\n'.join(data))
         f.write('\n')
 
